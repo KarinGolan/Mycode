@@ -1,2 +1,2 @@
 source "https://github.com/KarinGolan/Mycode.git"
-cookbook 'kk'
+cookbook 'kk', github:"https://github.com/KarinGolan/Mycode/kk"
