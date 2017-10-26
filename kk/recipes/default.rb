@@ -26,7 +26,7 @@ command "aws s3 cp /home/ec2-user/output.txt s3://myautomationscailing/myfolder/
 end
 
 bash "running bash script" do
-code 'FILE="output.txt"; if [ -f "/home/ec2-user/$FILE" ];  then NOW=$(date +"%c");  echo "Current time : $NOW", `curl http://169.254.169.254/latest/meta-data/instance-id`, "created successfully" >> /home/ec2-user/myfile.txt ; else echo "File $FILE does not exist";  fi'
+code 'FILE="output.txt"; if [ -f "/home/ec2-user/$FILE" ];  then NOW=$(date +"%c");  echo "Current time : $NOW", `curl http://169.254.169.254/latest/meta-data/instance-id`, "created successfully" >> /home/ec2-user/output.txt ; else echo "File $FILE does not exist";  fi'
 end
 
 execute "download file from  s3" do
@@ -43,7 +43,7 @@ end
 
 
 execute "copy details" do
-command "cat /home/ec2-user/myfile.txt >> /home/ec2-user/newfile.txt"
+command "cat /home/ec2-user/output.txt >> /home/ec2-user/newfile.txt"
  action "run"
 end
 
