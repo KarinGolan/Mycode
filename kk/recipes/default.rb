@@ -1,4 +1,4 @@
-#
+
 # Cookbook Name:: kk
 # Recipe:: default
 #
