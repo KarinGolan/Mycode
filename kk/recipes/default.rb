@@ -1,5 +1,5 @@
 
-# Cookbook Name:: kk
+# Cookbook Name:: kk-
 # Recipe:: default
 #
 # Copyright (C) 2017 
