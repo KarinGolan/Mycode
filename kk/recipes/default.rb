@@ -7,8 +7,6 @@
     s3_file "/home/ec2-user/Mycode.jar" do
         remote_path "Mycode.jar"
         bucket "jenkinsbucket123"
-        aws_access_key_id "AKIAJVGERA3LNDGBXOVQ"
-        aws_secret_access_key "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"
         s3_url "https://s3-eu-west-1.amazonaws.com/jenkinsbucket123"
         action :create
     end
