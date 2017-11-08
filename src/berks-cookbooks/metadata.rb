@@ -1,4 +1,4 @@
-name             'cookbooks'
+name             'berks-cookbooks'
 maintainer       ''
 maintainer_email ''
 license          ''
