@@ -17,3 +17,8 @@ execute "running Mycode" do
   cwd "/home/ec2-user"
   action "run"
 end
+
+execute "copying output file to s3" do
+command "aws s3 cp /home/ec2-user/output.txt s3://myautomationscailing/myfolder/output.txt"
+ action "run"
+end
