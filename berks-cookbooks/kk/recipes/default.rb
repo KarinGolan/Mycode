@@ -8,7 +8,7 @@
         remote_path "Mycode.jar"
         bucket "jenkinsbucket123"
         s3_url "https://s3-eu-west-1.amazonaws.com/jenkinsbucket123"
-        action :create
+        action :create,n,n
     end
 
 
